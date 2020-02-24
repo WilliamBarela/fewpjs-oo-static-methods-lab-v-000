@@ -12,7 +12,7 @@ class Formatter {
     titleizedString = ''
     lowcaseWords = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
     string.map(w => {
-      (w.any)
+      (lowcaseWords.some(e => e === w.toLowerCase())) ? w.toLowerCase() : this.capitalize(w);
     }).join(" ")
   }
 }
