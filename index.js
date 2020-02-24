@@ -7,4 +7,10 @@ class Formatter {
   static sanitize(word){
     return word.replace(/[^A-Za-z-'\s]+/g, '');
   }
+  
+  static titleize(string){
+    titleizedString = ''
+    lowcaseWords = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
+    
+  }
 }
