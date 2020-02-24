@@ -14,6 +14,7 @@ class Formatter {
     const title = splitString.map(w => {
       return (lowcaseWords.some(e => e === w)) ? w.toLowerCase() : this.capitalize(w);
     });
+    title[0] = this.capitalize(title[0]);
     return title.join(" ");
   }
 }
