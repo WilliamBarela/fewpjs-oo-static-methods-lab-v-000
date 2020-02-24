@@ -11,6 +11,8 @@ class Formatter {
   static titleize(string){
     titleizedString = ''
     lowcaseWords = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
-    
+    string.map(w => {
+      (w.any)
+    }).join(" ")
   }
 }
