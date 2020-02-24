@@ -12,7 +12,7 @@ class Formatter {
     const lowcaseWords = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
     const splitString = string.split(" ");
     return splitString.map(w => {
-      (lowcaseWords.some(e => e === w.toLowerCase()) ? w.toLowerCase() : this.capitalize(w));
+      (lowcaseWords.some(e => e === w)) ? w.toLowerCase() : this.capitalize(w);
     }).join(" ")
   }
 }
