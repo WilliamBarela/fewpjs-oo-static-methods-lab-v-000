@@ -5,6 +5,6 @@ class Formatter {
   }
   
   static sanitize(word){
-    return 
+    return word.replace()
   }
 }
